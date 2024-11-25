@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div class="wrapper__content">
+      <div *ngFor="let book of books" class="wrapper__content-card">
+        <img [src]="book.image" class="card__image" />
+        <div class="card__content">
+          <h3 class="card__title">{{ book.bookTitle }}</h3>
+          <p class="card__author">{{ book.author }}</p>
+          <p class="card__rating">
+            Rating:<i class="fa-solid fa-star"></i>
+           <i class="fa-solid fa-star"></i>
+           <i class="fa-solid fa-star"></i>
+           <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <button class="btn btn-primary">Available</button> <br />
+          <button class="btn btn-secondary">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
